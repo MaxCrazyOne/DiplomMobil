@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/layout_bg"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Информация"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignStart="@id/textView"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:gravity="start"
+        android:textSize="15dp"
+
+         />
+
+    <TextView
+        android:id="@+id/Latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Address"
+        android:layout_alignStart="@id/Address"
+        android:textColor="@color/white"
+        android:gravity="start"
+        android:padding="10dp"
+
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/Longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Latitude"
+        android:layout_alignStart="@id/Latitude"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:gravity="start"
+        android:textSize="15dp"
+
+        />
+
+    <TextView
+        android:id="@+id/Places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Longitude"
+        android:layout_alignStart="@id/Longitude"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:gravity="start"
+        android:textSize="15dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/CamImg"
+        android:layout_width="276dp"
+        android:layout_height="153dp"
+        android:layout_below="@id/Places"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        tools:srcCompat="@tools:sample/avatars[1]" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/OKbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CamImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="OK" />
+
+
+
+
+</RelativeLayout>
